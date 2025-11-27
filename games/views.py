@@ -91,7 +91,7 @@ class GameDetailView(View):
         return JsonResponse(
             {
                "error": "Cannot delete game with existing scores. Tournament has active games."
-            }
+            }, status = 400
         )
 
 
