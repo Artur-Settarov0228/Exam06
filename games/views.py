@@ -5,8 +5,8 @@ from django.core.exceptions import ValidationError
 
 from django.views import View
 import json
-
 from .models import Game
+
 
 class GameView(View):
     def post(self, request:HttpRequest) -> JsonResponse:
